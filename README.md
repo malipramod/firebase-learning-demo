@@ -1,5 +1,5 @@
 # firebase-learning-demo
-Includes Firebase (Hosting, Database, Storage, Functions) Hosting demo using Javascript.
+Includes Firebase (Hosting, Database, Storage, Functions) demo using Javascript.
 
 
 # Basic commands
