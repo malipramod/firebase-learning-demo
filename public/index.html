@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firebase Hosting Demo</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.5.5/firebase-storage.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+</head>
+
+<body>
+  <script src="app.js"></script>
+  <h1>Firebase Demo</h1>
+  <button class="btn btn-primary" onclick="googleLogin()">Login with Google</button>
+  <button class="btn btn-primary" onclick="getData()">Get data</button>
+  <button class="btn btn-primary" onclick="getProducts()">Get Products</button>
+
+  <br> Your Data: <h4 id="title"></h4>
+  <input id="txtInput" placeholder="Press enter to update" onkeydown="updatePosts(event)" />
+
+  <h3>Upload File</h3>
+  <input type="file" onchange="uploadFile(this.files)">
+  <hr>
+  <br> Image Info: <h4 id="imgInfo"></h4>
+  <img src="" id="imageUpload" width="20%" width="20%">
+
+
+
+</body>
+
+</html>
